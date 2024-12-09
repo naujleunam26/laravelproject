@@ -1,0 +1,111 @@
+/* custom-navbar.css */
+
+/* Colores de fondo y transición */
+.custom-navbar {
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+    border-bottom: 2px solid #fff;
+    padding: 15px;
+}
+
+.custom-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+/* Animación al pasar el ratón sobre el logo */
+.custom-navbar .navbar-brand:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Estilo para los enlaces del menú */
+.custom-navbar .nav-link {
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #333;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+/* Ícono de logout con efecto de escala */
+.custom-navbar .logout-link {
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .logout-link i {
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.custom-navbar .logout-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Toggler personalizado */
+.custom-toggler {
+    border-color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M3.5 12a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0-5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0-5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"%3E%3C/path%3E%3C/svg%3E');
+}
+/* Fondo personalizado para el menú */
+.navbar, .sidebar {
+    background-color: #2d3436;
+}
+
+.navbar .nav-link, .sidebar .nav-link {
+    color: #dfe6e9;
+    transition: color 0.2s;
+}
+
+.navbar .nav-link:hover, .sidebar .nav-link:hover {
+    color: #81ecec;
+}
+#cliente-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+/* Submenú con estilo personalizado */
+.custom-dropdown-menu {
+    background-color: #34495e;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    padding: 10px 0;
+    border: none;
+}
+
+.custom-dropdown-menu .dropdown-item {
+    color: #dfe6e9;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* Iconos con efecto */
+.custom-dropdown-menu .dropdown-item i {
+    color: #81ecec;
+    transition: color 0.3s;
+}
+
+.custom-dropdown-menu .dropdown-item:hover i {
+    color: #fff;
+}
